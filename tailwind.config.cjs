@@ -8,13 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: ({ theme }) => ({
-        headerbg: `linear-gradient(to right, ${theme(
-          "colors.headerbg.1"
-        )},${theme("colors.headerbg.2")},${theme("colors.headerbg.3")},${theme(
-          "colors.headerbg.4"
-        )},${theme("colors.headerbg.5")})`,
-      }),
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -53,16 +46,10 @@ module.exports = {
           DEFAULT: "hsl(var(--header))",
           foreground: "hsl(var(--header-foreground))",
         },
-        headerbg: {
-          1: "rgba(137,8,182,1)",
-          2: "rgba(94,99,238,1)",
-          3: "rgba(75,176,255,1)",
-          4: "rgba(199,111,254,1)",
-          5: "rgba(137,8,182,1)",
-        },
       },
       fontFamily: {
         sans: ["var(--font-albert-sans)"],
+        serif: ["var(--font-playfair-display)"],
       },
       borderRadius: {
         lg: "var(--radius)",

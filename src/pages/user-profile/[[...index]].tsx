@@ -73,7 +73,7 @@ const UserProfilePage = (
   };
 
   return (
-    <main className="min-h-screen py-8 text-primary-foreground">
+    <main className="min-h-screen bg-secondary py-8 text-primary-foreground">
       <Tabs
         defaultValue="account"
         className="flex w-screen flex-col place-items-center"

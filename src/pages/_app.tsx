@@ -1,5 +1,5 @@
 import { type AppType } from "next/app";
-import { Albert_Sans } from "next/font/google";
+import { Albert_Sans, Playfair_Display } from "next/font/google";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react";
@@ -13,9 +13,16 @@ const albert_Sans = Albert_Sans({
   variable: "--font-albert-sans",
 });
 
+const playfair_Display = Playfair_Display({
+  subsets: ["latin-ext"],
+  variable: "--font-playfair-display",
+});
+
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className={`${albert_Sans.variable} font-sans`}>
+    <div
+      className={`${albert_Sans.variable} font-sans ${playfair_Display.variable}`}
+    >
       <ClerkProvider
         {...pageProps}
         appearance={{

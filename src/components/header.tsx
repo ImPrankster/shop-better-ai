@@ -7,10 +7,10 @@ import { Input } from "./ui/input";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 grid h-[68px] w-screen grid-cols-7 justify-stretch space-x-2 bg-header px-8 text-header-foreground">
+    <header className="sticky top-0 z-50 grid h-[68px] w-screen grid-cols-7 justify-stretch space-x-2 bg-secondary px-8 text-secondary-foreground">
       <Link
         href="/"
-        className="col-span-1 flex place-content-start items-center"
+        className="col-span-1 flex place-content-start items-center font-serif text-2xl font-bold"
       >
         ShopBetter. AI
       </Link>
