@@ -21,9 +21,7 @@ const PostCard = (props: PostOutput) => {
               variant={"ghost"}
               className="bg-black bg-opacity-40 text-white"
             >
-              <Link href={`/home/post-detail/${props.textId}`}>
-                View detail
-              </Link>
+              <Link href={`/post/${props.textId}`}>View detail</Link>
             </Button>
           </div>
           <Image
@@ -36,10 +34,7 @@ const PostCard = (props: PostOutput) => {
         </Link>
       )}
 
-      <Link
-        href={`/home/post-detail/${props.textId}`}
-        className="hover:underline"
-      >
+      <Link href={`/post/${props.textId}`} className="hover:underline">
         <h3 className="line-clamp-3 scroll-m-20 px-2 text-[16px] font-semibold tracking-tight transition-all hover:line-clamp-none">
           {parser.tagline.trim(props.tagline)}
         </h3>
